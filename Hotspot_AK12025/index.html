@@ -1,0 +1,472 @@
+﻿<!doctypehtml>
+    <html lang="ar">
+    <meta charset="UTF-8">
+    <title data-network-name>شبكة{{network-name}} </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#8277d1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/fontello.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+<style>
+    .im1::before{
+        content: "سرعة في النت" ;
+    }
+    .im2::before{
+        content: "سرعة في النت";
+    }
+    .im3::before{
+        content: "رصيد نت أكثر من اي شبكة";
+    }
+    .im4::before{
+        content: "وقت أستخدام أطول";
+    }
+    .im5::before{
+        content: "سرعة في النت";
+    }
+</style>
+    <body translate="no">
+        <div class="container">
+            <div class="error-container">
+                <div class="error">
+                    <div class="fade-in">
+                        <p id="error">
+                    </div>
+                </div>
+            </div>
+            <div class="screen">
+                <div class="screen-content">
+                    <div class="login" id="login" style="visibility: hi;">
+                        <section class="section">
+                            <p class="marquee" data-news-line>{{news-line}}
+                        </section>
+                        
+                        <form class="login-form" name="login">
+                            <h2 style="position: absolute; top: -230px;color: #f1c096 ; padding-right: 73px;">شبكة برق  نت اللاسلكية 
+                                <br>
+                                <!-- <span style="font-size: 17px;">www.s.com</span> -->
+                            </h2>
+                            <p style="font-size: 16px;  padding-right: -73px;">مرحبا بك .. للدخول الى الصفحة قم بالدخول الى المتصفح واكتب a.net</p>
+                            <span class="screen-background-shape screen-background-shape0">
+                                <div class="ads">
+                                    <div class="box">
+                                        <span style="--i:1"><img class="im1" src="./adimg/1.jpg"></span>
+                                        <span style="--i:2"><img class="im2" src="./adimg/2.jpg"></span>
+                                        <span style="--i:3"><img class="im3" src="./adimg/3.jpg"></span>
+                                        <span style="--i:4"><img class="im4" src="./adimg/4.jpg"></span>
+                                        <span style="--i:5"><img class="im5" src="./adimg/5.jpg"></span>
+                                        <span style="--i:5"><img class="im1" src="./adimg/1.jpg"></span>
+                                        <span style="--i:7"><img class="im2" src="./adimg/2.jpg"></span>
+                                        <span style="--i:8"><img class="im3" src="./adimg/3.jpg"></span>
+                                        <span style="--i:9"><img class="im4" src="./adimg/4.jpg"></span>
+                                        <span style="--i:10"><img class="im5" src="./adimg/5.jpg"></span>
+                                        <span style="--i:11"><img class="im1" src="./adimg/1.jpg"></span>
+                                        <span style="--i:12"><img class="im2" src="./adimg/2.jpg"></span>
+                                        <span style="--i:13"><img class="im3" src="./adimg/3.jpg"></span>
+                                        <span style="--i:14"><img class="im4" src="./adimg/4.jpg"></span>
+                                    </div>
+                                </div>
+                            </span>
+                            <div class="login-field"><i class="login-icon fas icon-user"></i><input name="username"
+                                    class="login-input" placeholder="ادخل رقم الكرت هنا" username-field improve-input
+                                    autocomplete="off">
+                                    <select name="" id="se" >
+                                        <option value="0" selected disabled >دخول بكرت سابق</option>
+                                        <option value="relod">تحديث</option>
+                                    </select>
+                                </div>
+                            <div class="login-field password-field"><i class="login-icon fas icon-lock"></i><input
+                                    type="hidden" name="password" class="login-input" placeholder="ادخل كلمة السر هنا"
+                                    improve-input></div>
+                            <p>أختار سرعتك من هنا</p>
+                            <select id="speed" name="domain" speed-field="">
+                                <option value=""  disabled="" hidden="">اختار سرعة الإنترنت</option>
+                                <option value="speed_gaming">سرعة العاب</option>     
+                                <option value="speed_economic">سرعة أقتصادية </option>
+                                <option value="speed_normal" selected="">سرعة متوسطة </option>
+                                <option value="speed_high">سرعة عالية</option>
+                                <option value="speed_very">سرعة عالية جدا</option>
+                            </select><br><br>
+                            <p>التحديثات و المتجر تسبب أنتهاء الرصيد بسرعة يمكنك أيقافهما بالضغط هنا </p>
+                            <!-- Switch to enable/disable automatic updates -->
+                        <div id="msgtoggles" class="switch-container">
+                            <div class="switch-box">
+                                <label class="switch">
+                                    <input type="checkbox" id="update" onchange="toggleUpdates();" />
+                                    <span id="choosedupdate" style="color: black;"></span>
+                                </label>
+                                <span>قم بإختيار حالة التحديثات</span>
+                            </div>
+                        </div>
+                        <!-- زر ايقاف التحديثات المخفي -->
+                            <div style="margin: 15px; display: none;"><input type="checkbox" value="" id="chupdate"><label
+                                    for="chupdate">أيقاف التحديثات </label></div>
+                        <!-- نهاية زر ايقاف التحديثات المخفي -->
+									<button class="button login-submit"
+                                parent-id="status" enable-hot-cookie><span class="button-text">تسجيل
+                                    الدخول</span></i></button>
+                                    <!-- <div class="button"> -->
+                                        $(if trial == 'yes')
+                                        <button class="trial button login-submit" onclick="window.location.href='$(link-login-only)?dst=$(link-orig-esc)&username=T-$(mac-esc)'">
+                                            <span>تجربة الإنترنت</span>
+                                        </button>
+                                    $(endif)
+                                    <!-- </div> -->
+                        </form>
+<button class="m" parent-id="loan"
+                            data-loan-button>جديدنا</button>
+                        <div class="social-login"> </div>
+                        
+                              
+                              <button class="sellpoint"
+                                parent-id="sell-point" data-sell-point-button>نقاط البيع</button>
+								
+								 <button class="price-icon"
+                                parent-id="price" data-sell-point-button>الاسعار</button>
+                            <h5 style="color: #F4A460; position: absolute; left: 0; right: 0; bottom: -15px; "
+                                class="contact" data-service-number>خدمة العملاء:{{service-number}}</h5>
+                       
+                    </div>
+                    <div class="app" id="price">
+                        <div class="price-div">
+                            <div class="wrapper">
+                                <p class="title">الاسعار
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">الفئة
+                                            <th scope="col">الوقت
+                                            <th scope="col">الرصيد
+                                            <th scope="col">الصلاحية
+                                    <tbody id="profiles">
+                                </table><button class="app-logout button app-submit">رجوع</button>
+                                <h5 class="contact " data-service-number>خدمة العملاء:{{service-number}}</h5>
+                            </div>
+                        </div>
+                        <div class="social-login"></div>
+                    </div>
+                    <div class="app" id="sell-point">
+                        <div class="sell-point-div">
+                            <div class="wrapper">
+                                <p class="title">نقاط البيع
+                                <table>
+                                    <tbody class="sell-point" id="sell-points">
+                                </table><button class="app-logout button app-submit">رجوع</button>
+                                <h5 class="contact" data-service-number>خدمة العملاء:{{service-number}}</h5>
+                            </div>
+                        </div>
+                        <div class="social-login"></div>
+                    </div>
+                    <div class="app" id="status">
+                        <div class="status-div">
+                            <div class="wrapper">
+                                <p class="title" id="status-title">تم تسجيل دخولك بنجاح!
+                                <p>إذا لم يتم الأتصال تلقائيا أضغط <a
+                                        style="text-decoration: none; color: #F4A460; padding: 5px;border: 1px solid; border-radius: 10px;"
+                                        href="status.html">هنا</a></p>
+                                        <br>
+                                        <a
+                                        style="text-decoration: none; display: block; color: #b4b433; margin: 15px; padding: 15px;border: 1px solid; border-radius: 10px;"
+                                        href="http://he408m2xzkm.sn.mynetname.net:2003/web/index.html#!/home" >الاستراحة</a>
+                                        
+                                        <a
+                                        style="text-decoration: none; display: block; color: #b4b433; margin: 15px; padding: 15px;border: 1px solid; border-radius: 10px;"
+                                        href="live/index.html" >البث المباشر</a>
+                                        
+                                <p>أختيار سرعات عالية يسبب انتهاء الكرت بسرعة بسبب التطبيقات التي تستهلك أنترنت أكثر
+                                    <br>أختر سرعة اقل للحفاظ على الكرت</p><br>
+                                <div class="statusdiv">
+                                    <table>
+                                        <tr>
+                                            <td class="img" rowspan="2"><img style="height: 100%; width: 100%;"
+                                                    src="img/ss.svg" alt=""></td>
+                                            <td>سرعة الكرت</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            <strong></strong>
+                                            <script type="text/javascript">
+                                                var speed = "$(domain)";
+                                            if (speed == "speed_economic") {
+                                            
+                                        document.write("سرعة اقتصادية");
+                                            
+                                                } else if (speed == "speed_normal") {
+                                            document.write("سرعة متوسطة");
+                                            
+                                            
+                                                } else if (speed == "speed_high") {
+                                            document.write("سرعة عالية");
+                                            
+                                            
+                                             
+                                            
+                                            
+                                                } else if (speed == "speed_gaming") {
+                                            document.write("سرعة لالعاب الاونلاين");
+                                            
+                                            
+                                                } else{
+                                            document.write('سرعة افتراضية');
+                                            } 
+                        
+                                        
+                                                                    
+                                                                </script>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><select id="speedchange" class="tcs">
+                                                <option value="" disabled="" selected="">اختار  سرعة الانترنت</option>
+                                                </select></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <p>التحديثات و المتجر تسبب أنتهاء الرصيد بسرعة يمكنك أيقافهما من هنا </p><br>
+                                <p>اذا واجهت مشاكل في تبديل حالة التحديثات من متصفح جهازك قم بتحديث الصفحه</p>
+                                <div class="statusdiv">
+                                    <table>
+                                        <tr>
+                                            <td>التحديثات و متجر التطبيقات </td>
+                                            <td style="position: relative;" class="img" rowspan="2"><img
+                                                    style="height: 100%; width: 100%;" src="img/gs.svg" alt=""></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td colspan="1">
+                                                <select id="updatechange" class="tcs">
+                                                    <option value="ns" disabled hidden selected>أضغط هنا للتغيير
+                                                    </option>
+                                                    <option value="">تفعيل التحديثات </option>
+                                                    <option value="choose-auto-update-off">أيقاف التحديثات</option>
+                                                    <option value="cancel">إلغاء</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <p>معلومات الكرت</p><br>
+                                <table>
+                                    </tr>
+                                    <td>التنزيل
+                                    <td id="bytes_out">
+                                        <tr>
+                                            <td>الرفع
+                                            <td id="bytes_in">
+                                        <tr remain_bytes_total>
+                                            <td>التحميل المتبقي
+                                            <td id="remain_bytes_total">مفتوح
+                                        <tr>
+                                            <td>الوقت المستهلك
+                                            <td id="uptime">
+                                        <tr session_time_left>
+                                            <td>الوقت المتبقي
+                                            <td id="session_time_left">مفتوح
+                                </table><br><br><br><br><button class=" login-submit app-logout" erase-cookie
+                                    clear-hot-cookie>تسجيل الخروج</button><br><button
+                                    class="login-submit app-logout">قطع الاتصال</button><br><br><br>
+                                <p class="pspeed" data-service-number>خدمة العملاء:{{service-number}}</p>
+                            </div>
+                        </div><button class="button app-submit sell-point-icon app-store" parent-id="app-store"
+                            data-app-store-status-button>متجر البرامج</button>
+                    </div>
+                    <div class="app" id="block">
+                        <div class="status-div">
+                            <div class="wrapper">
+                                <p class="title">انت محظور
+                                <div style="padding: 25px">
+                                    <p class="contact-text">لقد تم حظرك بسبب محاولات تسجيل الدخول الكثيرة الخاطئة
+                                    <div class="app-user"><span>بقي على فك الحظر: </span><span count-down-span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-login">
+                            <h5 class="contact back" data-service-number>خدمة العملاء:{{service-number}}</h5>
+                        </div>
+                    </div>
+                    <div class="app" id="app-store">
+                        <div class="sell-point-div">
+                            <div class="wrapper" id="grid"></div>
+                        </div>
+                        <div class="social-login"><button class="app-logout button app-submit back">الصفحة
+                                السابقة</button>
+                            <h5 class="contact back" data-service-number>خدمة العملاء:{{service-number}}</h5>
+                        </div>
+                    </div>
+                    <div class="app" id="loan">
+                        <div class="price-div">
+                            <div class="wrapper">
+                                <p class="title">شبكة برق  نت اللاسلكية</p> 
+                                <!-- هنا يتم كتابة الخدمات و العروض و النصائح -->
+
+
+
+                                <!-- هنا يتم كتابة الخدمات و العروض و النصائح -->
+                                <button class="app-logout button app-submit">رجوع</button>
+                                <h5 class="contact " data-service-number>خدمة العملاء:{{service-number}}</h5>
+                            </div>
+                        </div>
+                        <div class="social-login"></div>
+                    </div>
+                </div>
+                <div class="screen-background"><span
+                        class="screen-background-shape screen-background-shape8"></span><span
+                        class="screen-background-shape screen-background-shape7"></span><span
+                        class="screen-background-shape screen-background-shape6"></span><span
+                        class="screen-background-shape screen-background-shape5"></span><span
+                        class="screen-background-shape screen-background-shape4"></span>
+                        <span
+                        class="screen-background-shape screen-background-shape3">
+                        <svg  class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+
+                            <path d="M 0 30 Q 20 65 100 0 V 80 Q 50 70 0 100  Z" ></path>
+                        </svg></span><span
+                        class="screen-background-shape screen-background-shape2"></span>
+                        
+                        <span
+                        class="screen-background-shape screen-background-shape1"></span></div>
+            </div>
+
+            <span style="display: none;" id="winmsg">
+                <!-- هنا يتم وضع نص الاشعارات -->
+
+                <!-- هنا يتم وضع نص الاشعارات -->
+            </span>
+        </div>
+        </div>
+        <script src="js/init.min.js"></script>
+        <script src="js/hotInImprover.min.js"></script>
+        <script src="js/hotCookie.min.js"></script>
+        <script src="js/hotOptions.min.js"></script>
+        <script src="js/hotBlocker.min.js"></script>
+        <script src="js/main.min.js"></script>
+        <script src="js/hotCookie.min.js"></script>
+        <script src="js/hotOptions.min.js"></script>
+        <script>
+            var e,  m = new Date().toDateString()
+            if(m.includes('Fri')){
+                e = document.getElementById('error').innerText ="جمعة مباركة" ;
+                showErrorPopup()
+            }
+        </script>
+    <script>
+    // دالة لتحديث حالة الكوكيز
+    function setCookie(name, value, days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    }
+
+    function getCookie(name) {
+        const value = "; " + document.cookie;
+        const parts = value.split("; " + name + "=");
+        if (parts.length === 2) return parts.pop().split(";").shift();
+    }
+
+        // ابديت
+            function toggleUpdates() {
+            const disupdate = document.getElementById('update').checked;
+            if (disupdate) {
+                setCookie('update', 'choose-auto-update-off', 365);
+                document.getElementById("choosedupdate").innerText = "سوف يتم ايقاف التحديثات";
+            } else {
+                setCookie('update', '', 365);
+                document.getElementById("choosedupdate").innerText = "لن يتم ايقاف التحديثات";
+            }
+        }
+            function getCookie(name) {
+                const value = "; " + document.cookie;
+                const parts = value.split("; " + name + "=");
+                if (parts.length === 2) return parts.pop().split(";").shift();
+            }
+
+        document.getElementById("updatechange").addEventListener("change", function () {
+        const selectedValue = this.value; // القيمة المختارة
+        const statusText = document.getElementById("updateStatusText");
+
+        if (selectedValue === "") {
+            setCookie('update', '', 365); // تفعيل التحديثات
+            statusText.innerText = "لن يتم ايقاف التحديثات"; // تحديث النص
+        } else if (selectedValue === "choose-auto-update-off") {
+            setCookie('update', 'choose-auto-update-off', 365); // إيقاف التحديثات
+            statusText.innerText = "سوف يتم ايقاف التحديثات"; // تحديث النص
+        } else if (selectedValue === "cancel") {
+            this.value = "ns"; // إعادة القائمة للوضع الافتراضي
+        }
+    });
+            window.onload = function() {
+                const cookieValue = getCookie('update');
+                
+                const checkbox = document.getElementById('update');
+                const statusText = document.getElementById("choosedupdate");
+                if (cookieValue === 'choose-auto-update-off') {
+                    checkbox.checked = true;
+                    statusText.innerText = "سوف يتم ايقاف التحديثات";
+                } else {
+                    checkbox.checked = false;
+                    statusText.innerText = "لن يتم ايقاف التحديثات";
+                }
+            };
+        </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // جلب السرعة الحالية من متغير أو بيانات الراوتر
+        const currentSpeed = "%domain%"; // استخدام السرعة الحالية المرسلة من الراوتر
+
+        // عرض السرعة الحالية عند تحميل الصفحة
+        const selectedSpeed = document.getElementById('selected-speed');
+        if (currentSpeed) {
+            selectedSpeed.textContent = currentSpeed;
+        } else {
+            selectedSpeed.textContent = "Not available";
+        }
+    });
+
+    document.getElementById('change-speed-form').addEventListener('submit', function (e) {
+        e.preventDefault(); // منع إعادة التوجيه الافتراضية
+
+        const speed = document.getElementById('speed').value;
+        const username = "%username%";
+        const ip = "%ip%";
+        const notification = document.getElementById('notification');
+        const selectedSpeed = document.getElementById('selected-speed');
+
+        // عرض السرعة المختارة
+        selectedSpeed.textContent = speed;
+
+        // أولاً، تسجيل الخروج
+        fetch('/logout', { method: 'POST' })
+            .then(response => {
+                if (response.ok) {
+                    // بعد تسجيل الخروج، إعادة توجيه لتسجيل الدخول بالسرعة الجديدة
+                    const loginUrl = `/login?username=${encodeURIComponent(username)}&domain=${encodeURIComponent(speed)}&ip=${encodeURIComponent(ip)}`;
+                    
+                    // إرسال طلب لتسجيل الدخول وتحديث السرعة
+                    fetch(loginUrl, { method: 'GET' })
+                        .then(loginResponse => {
+                            if (loginResponse.ok) {
+                                notification.style.display = 'block';
+                                notification.textContent = 'Speed changed successfully!';
+                                notification.className = 'success'; // تنبيه بالنجاح
+                            } else {
+                                notification.style.display = 'block';
+                                notification.textContent = 'Failed to change speed. Please try again.';
+                                notification.className = 'error'; // تنبيه بالفشل
+                            }
+                        });
+                } else {
+                    notification.style.display = 'block';
+                    notification.textContent = 'Logout failed. Please try again.';
+                    notification.className = 'error'; // تنبيه بالفشل
+                }
+            })
+            .catch(error => {
+                notification.style.display = 'block';
+                notification.textContent = 'An error occurred. Please try again.';
+                notification.className = 'error'; // تنبيه بالفشل
+                console.error('Error:', error);
+            });
+    });
+</script>
